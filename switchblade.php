@@ -6,7 +6,7 @@
 // Webhook: https://api.telegram.org/bot<token>/setwebhook?url=<url>
 
 // BOT API Configuration
-$botToken = "TOKEN"; #<------------------- PUT YOUR TOKEN HERE------------->#
+$botToken = "8212552566:AAEs9SdhaYQCaPxLfv1rYYlr6CySYq0jnCs"; #<------------------- PUT YOUR TOKEN HERE------------->#
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -405,5 +405,6 @@ function sendMessage ($chatId, $message){
 $url = $GLOBALS[website]."/sendMessage?chat_id=".$chatId."&text=".$message."&reply_to_message_id=".$message_id."&parse_mode=HTML";
 file_get_contents($url);      
 }
+
 
 ?>
